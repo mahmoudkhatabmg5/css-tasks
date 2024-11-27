@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .grid-1 {
+            background-color: #ddd;
+            padding: 20px;
+            width: 800px;
+            height: 400px;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 50px auto;
+            gap: 15px 15px;
+        }
+
+        .grid-1 div {
+            background-color: #607d8b;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .grid-1 .one::before {
+            content: "Element 1";
+        }
+
+        .grid-1 .two::before {
+            content: "Element 2";
+        }
+
+        .grid-1 .three::before {
+            content: "Element 3";
+        }
+
+        .grid-1 .four::before {
+            content: "Element 4";
+        }
+
+        .grid-1 .five::before {
+            content: "Element 5";
+        }
+
+        .grid-1 .six::before {
+            content: "Element 6";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-1">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+    </div>
+
+</body>
+
+</html>
